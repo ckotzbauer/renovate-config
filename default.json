@@ -1,13 +1,14 @@
 {
   "extends": [
     "config:base",
-    ":semanticCommitScopeDisabled"
+    ":semanticCommitScopeDisabled",
+    ":disableRateLimiting",
+    ":docker",
+    ":timezone(Europe/Berlin)",
+    ":enableVulnerabilityAlertsWithLabel(kind/security)"
   ],
   "labels": [
     "kind/dependencies"
-  ],
-  "schedule": [
-    "every weekend"
   ],
   "packageRules": [
     {
@@ -15,7 +16,8 @@
         "minor",
         "patch",
         "pin",
-        "digest"
+        "digest",
+        "lockFileMaintenance"
       ],
       "addLabels": [
         "approved"
@@ -24,7 +26,6 @@
     {
       "updateTypes": [
         "major",
-        "lockFileMaintenance",
         "rollback",
         "bump"
       ],
