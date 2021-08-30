@@ -4,6 +4,7 @@
     ":semanticCommitTypeAll(deps)",
     ":semanticCommitScopeDisabled",
     ":disableRateLimiting",
+    ":disableDependencyDashboard",
     ":docker",
     ":timezone(Europe/Berlin)",
     ":enableVulnerabilityAlertsWithLabel(kind/security)"
@@ -33,6 +34,13 @@
       "reviewers": [
         "ckotzbauer"
       ]
+    }
+  ],
+  "updateNotScheduled": false,
+  "hostRules": [
+    {
+      "matchHost": "github.com",
+      "concurrentRequestLimit": 2
     }
   ]
 }
