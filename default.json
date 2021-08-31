@@ -41,6 +41,10 @@
     {
       "matchHost": "github.com",
       "concurrentRequestLimit": 2
+    },
+    {
+      "matchHost": "api.github.com",
+      "concurrentRequestLimit": 2
     }
   ]
 }
