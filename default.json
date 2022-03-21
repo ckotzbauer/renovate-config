@@ -27,6 +27,19 @@
     },
     {
       "updateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance"
+      ],
+      "automerge": true,
+      "matchPackageNames": [
+        "ckotzbauer/actions-toolkit"
+      ]
+    },
+    {
+      "updateTypes": [
         "major",
         "rollback",
         "bump"
