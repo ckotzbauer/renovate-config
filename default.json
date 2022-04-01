@@ -21,22 +21,7 @@
         "digest",
         "lockFileMaintenance"
       ],
-      "addLabels": [
-        "approved"
-      ]
-    },
-    {
-      "updateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest",
-        "lockFileMaintenance"
-      ],
-      "automerge": true,
-      "matchPackageNames": [
-        "ckotzbauer/actions-toolkit"
-      ]
+      "automerge": true
     },
     {
       "updateTypes": [
