@@ -35,6 +35,7 @@
     }
   ],
   "updateNotScheduled": false,
+  "rebaseWhen": "conflicted", 
   "hostRules": [
     {
       "matchHost": "github.com",
