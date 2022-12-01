@@ -1,5 +1,6 @@
 {
-  "extends": [
-    "schedule:monthly"
+  "schedule": [
+    "every first day of the month"
   ]
-}
+} 
+
