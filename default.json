@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:best-practices",
     ":semanticCommitTypeAll(deps)",
     ":semanticCommitScopeDisabled",
     ":disableRateLimiting",
@@ -14,7 +14,7 @@
   ],
   "packageRules": [
     {
-      "updateTypes": [
+      "matchUpdateTypes": [
         "minor",
         "patch",
         "pin",
@@ -24,7 +24,7 @@
       "automerge": true
     },
     {
-      "updateTypes": [
+      "matchUpdateTypes": [
         "major",
         "rollback",
         "bump"
@@ -32,8 +32,16 @@
       "reviewers": [
         "ckotzbauer"
       ]
+    },
+    {
+      "matchSourceUrls": [
+        "https://github.com/ckotzbauer/**"
+      ],
+      "minimumReleaseAge": "0 days"
     }
   ],
+  "minimumReleaseAge": "3 days",
+  "automergeSchedule": ["at any time"],
   "updateNotScheduled": false,
   "rebaseWhen": "conflicted", 
   "hostRules": [
