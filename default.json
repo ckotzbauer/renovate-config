@@ -24,16 +24,6 @@
       "automerge": true
     },
     {
-      "matchUpdateTypes": [
-        "major",
-        "rollback",
-        "bump"
-      ],
-      "reviewers": [
-        "ckotzbauer"
-      ]
-    },
-    {
       "matchSourceUrls": [
         "https://github.com/ckotzbauer/**"
       ],
