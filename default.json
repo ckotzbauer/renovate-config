@@ -15,6 +15,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": [
+        "major",
         "minor",
         "patch",
         "pin",
@@ -30,7 +31,8 @@
       "minimumReleaseAge": "0 days"
     }
   ],
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "2 days",
+  "internalChecksFilter": "strict",
   "automergeSchedule": ["at any time"],
   "updateNotScheduled": false,
   "rebaseWhen": "conflicted", 
